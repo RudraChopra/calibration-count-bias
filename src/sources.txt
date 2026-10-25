@@ -1,0 +1,21 @@
+Primary source records for the unexecuted new-condition protocol
+
+CIFAR10: Alex Krizhevsky, Learning Multiple Layers of Features from Tiny Images, 2009.
+https://www.cs.toronto.edu/~kriz/cifar.html
+
+Food101: Lukas Bossard, Matthieu Guillaumin, and Luc Van Gool, Food-101: Mining Discriminative Components with Random Forests, ECCV 2014.
+https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/
+
+FGVC Aircraft: Subhransu Maji, Juho Kannala, Esa Rahtu, Matthew Blaschko, and Andrea Vedaldi, Fine-Grained Visual Classification of Aircraft, 2013.
+https://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/
+The original project page includes older 102-variant descriptions. The pinned torchvision 0.22 adapter and 2013b archive expose 100 variant labels; the runner checks the actual class mapping. The bottom 20 pixel attribution strip is cropped as instructed on the dataset page. Photographs remain subject to their noncommercial research restrictions and their authors' rights. Raw images are not included in the returned evidence archive.
+https://docs.pytorch.org/vision/0.22/generated/torchvision.datasets.FGVCAircraft.html
+https://docs.pytorch.org/vision/0.22/_modules/torchvision/datasets/fgvc_aircraft.html
+
+Pinned CUDA wheel installation recipe:
+https://pytorch.org/get-started/previous-versions/#v271
+
+Model sources: the exact public Hugging Face model IDs, immutable revisions, and expected weight SHA256 digests are embedded in pinned_encoder_helpers.py. The three model copies are loaded one at a time, without remote custom code.
+
+Hardware target, not a measured minimum or timing promise:
+https://www.nvidia.com/en-us/data-center/a100/
